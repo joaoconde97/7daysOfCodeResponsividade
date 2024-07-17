@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-fonte-principal: rgb(250, 250, 250);
+    --cor-fonte-secundaria: rgba(163, 163, 163, 1);
+    --tipo-fonte-principal: 'Montserrat';
+    --cor-botao-laranja: rgba(255, 176, 80, 1);
+    --cor-botao-azul: rgba(72, 148, 255, 1);
+    --cor-de-fundo: rgb(37, 37, 37);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--tipo-fonte-principal);
+    background-color: var(--cor-de-fundo);
+    font-size: 14px;
+    color: var(--cor-fonte-secundaria);
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    margin: 5em 2em;
+    gap: 16px;
+}
+
+.cabecalho__img {
+    width: 5em;
+    border-radius: 50%;
+}
+
+.cabecalho__titulo {
+    font-weight: 700;
+    color: var(--cor-fonte-principal);
+}
