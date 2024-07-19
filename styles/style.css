@@ -17,7 +17,7 @@
 body {
     font-family: var(--tipo-fonte-principal);
     background-color: var(--cor-de-fundo);
-    font-size: 14px;
+    font-size: 0.9em;
     color: var(--cor-fonte-secundaria);
 }
 
@@ -40,20 +40,6 @@ body {
     color: var(--cor-fonte-principal);
 }
 
-.botao {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    margin-top: 32em;
-}
-
-.botao__flutuante {
-    background-color: var(--cor-botao-azul);
-    padding: 15px;
-    border-radius: 50%;
-    position: absolute;
-    margin: 20px;
-}
 
 /* RODAPE */
 
@@ -79,10 +65,173 @@ body {
     list-style-type: none;
     gap: 52px;
 
-    font-size: 12px;
+    font-size: 1em;
 }
 
 .rodape__lista__item__link {
     text-decoration: none;
     color: var(--cor-fonte-secundaria);
+}
+
+/* CARDS */
+
+.consultas {
+    margin: 8em 2em;
+    
+}
+
+.consulta__card {
+    width: 400px;
+    padding: 18px;
+    border-radius: 12px;
+    border: 1px solid rgb(110, 107, 107);
+    margin-bottom: 2em;
+}
+
+.consulta__img__perfil {
+    width: 4em;
+    border-radius: 50%;
+}
+
+.consulta__card__paciente {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding-bottom: 2em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid rgb(110, 107, 107);
+    
+}
+
+.lista__cards * {
+    list-style-type: none;
+}
+
+.data {
+    margin: 1em;
+
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+
+    .consultas {
+        margin: 5em 0em 8em 1.5em;
+        
+    }
+
+    .cabecalho {
+        display: flex;
+        align-items: center;
+        margin: 2em 2em 2em 2em;
+        gap: 16px;
+    }
+
+    .data {
+        margin: 1em 0em 1em 0em;
+    
+    }
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+    .lista__cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .consulta__card {
+        margin: 1em;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+
+    .cabecalho {
+        gap: 32px;
+    }
+
+    .cabecalho__img {
+        width: 10em;
+        border-radius: 50%;
+    }
+    
+    .titulo__principal {
+        font-weight: 700;
+        color: var(--cor-fonte-principal);
+        font-size: 3em;
+    }
+
+
+}
+
+
+/* BOTÕES */
+.btn__video {
+    background-color: var(--cor-botao-laranja);
+    color: var(--cor-fonte-principal);
+    padding: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+    font-family: var(--tipo-fonte-principal);
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.btn__audio {
+    background-color: rgb(110, 107, 107);
+    color: var(--cor-fonte-principal);
+    padding: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+    font-family: var(--tipo-fonte-principal);
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.btn__endereco {
+    background-color: var(--cor-botao-azul);
+    color: var(--cor-fonte-principal);
+    padding: 18px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+
+    font-family: var(--tipo-fonte-principal);
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container__botoes {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 1em;
+
+}
+
+.btn__flutuante {
+    position: fixed;
+    bottom: 82px;
+    right: 17px;
+    z-index: 10;
+    background-color: var(--cor-botao-azul);
+    color: var(--cor-fonte-principal);
+    border: none;
+    border-radius: 50%;
+    padding: 16px;
+    cursor: pointer;
+
+    font-size: 2em;
 }
